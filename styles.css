@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .mainContainer {
     display: flex;
     height: 100vh;
@@ -16,7 +27,7 @@
     clip: auto;
 }
 
-img[src="assets/images/pexels-fotios-photos-2215534.jpg"] {
+img[src="assets/images/halie-west-25xggax4bSA-unsplash.jpg"] {
     
     object-fit: cover;
     width: 100%;
@@ -39,14 +50,35 @@ img[src="assets/images/pexels-fotios-photos-2215534.jpg"] {
     background-color: rgba(0, 0, 0, 50%);
     text-align: center;
     color: white;
-    padding: 2em 0;
+    padding: 0.55em 0;
+    font-family: Norse;
+    font-size: 25rem;
+
 
 }
 
 .topSection {
-    padding: 2em;
+    max-width: 105ch;
 }
+
+.bottomSection, .middleSection, .topSection{
+    padding: 4em 3em;
+}
+
 .middleSection {
     background-color: white;
+    font-size: 1.3em;
+}
+.middleSection {
+    padding-top: 1em;
+}
+.bottomSection {
+}
+
+.createAccountBtn {
+    background-color: #596D48;
+    color: white;
+    border-radius: 12px;
     padding: 0.5em 2em;
+    font-size: 1.8em;
 }
